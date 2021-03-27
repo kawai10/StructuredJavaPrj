@@ -1,3 +1,4 @@
+/*
 public class Program {
     public static void main(String[] args) {
         int[][] lottos = null;
@@ -40,3 +41,4 @@ public class Program {
         return 0;
     }
 }
+*/
