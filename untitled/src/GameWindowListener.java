@@ -1,22 +1,8 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class GameFrame extends Frame implements WindowListener {
-
-    public GameFrame() {
-        addWindowListener(this);
-        setVisible(true);
-    }
-
-    @Override
-    public void paint(Graphics g) {
-        super.paint(g);
-
-        g.drawRect(100,100,200,100);
-    }
-
+public class GameWindowListener implements WindowListener {
     @Override
     public void windowOpened(WindowEvent e) {
 
@@ -29,8 +15,7 @@ public class GameFrame extends Frame implements WindowListener {
 
     @Override
     public void windowClosed(WindowEvent e) {
-        JOptionPane.showMessageDialog(this, "bye");
-        System.exit(0);
+
     }
 
     @Override
